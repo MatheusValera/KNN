@@ -114,6 +114,7 @@ const knn = async (k,nameFileTest, nameFileTraining) => {
   resultsExecute.forEach((value ,index)=> {
       matrix[classResults.indexOf(value)][classResults.indexOf(value)]++
   })
+
   return matrix
 }
 

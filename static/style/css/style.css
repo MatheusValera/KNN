@@ -1,0 +1,161 @@
+@font-face {
+  font-family: jetbrains;
+  src: url("../../font/JetBrainsMono-Bold.ttf");
+}
+body {
+  box-sizing: border-box;
+  background-color: black;
+  color: rgb(148, 213, 243);
+  overflow-x: hidden;
+}
+body nav {
+  width: 100%;
+  height: 10vh;
+  padding: 5px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  padding-bottom: 10px;
+}
+body nav h1 {
+  font-size: 32px;
+  font-family: jetbrains;
+}
+body main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body main #content {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 25 px;
+  padding: 10px;
+  border: dotted rgb(57, 57, 57) 5px;
+}
+body main #result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 800px;
+  padding: 20px;
+}
+body main #result .grafico {
+  margin: 20px;
+  padding: 10px;
+}
+body main input, body main label {
+  width: 200px;
+  height: 20px;
+  font-weight: 600;
+}
+body main input, body main select {
+  border-radius: 5px;
+  background-color: rgb(204, 204, 204);
+  margin-bottom: 10px;
+}
+body main select {
+  margin-left: 10px;
+}
+body main label {
+  margin-top: 5px;
+}
+body main #k {
+  width: 36px;
+  margin-left: 10px;
+  text-align: center;
+}
+body main .csv {
+  width: 300px;
+  margin-top: 5px;
+  background-color: black;
+  color: gray;
+  font-size: 12px;
+}
+body main input[type=file i]::-webkit-file-upload-button {
+  background-color: rgb(204, 204, 204);
+}
+body main button, body main .botao {
+  align-self: center;
+  margin-left: 0px;
+  margin-top: 10px;
+  border-radius: 4px;
+  outline: none;
+  width: 100px;
+  height: 40px;
+  background-color: rgb(148, 213, 243);
+  font-weight: 600;
+}
+body main button:hover, body main .botao:hover {
+  background-color: rgba(130, 195, 225, 0.946);
+}
+body main .form, body main .principal, body main .matriz {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+body main .table {
+  min-height: 100%;
+  min-width: 30%;
+  align-self: flex-start;
+}
+body main .table td, body main .table th {
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgb(0, 0, 0);
+  text-align: center;
+  background-color: rgb(57, 57, 57);
+  font-weight: 700;
+  font-size: 18px;
+}
+body main .table th, body main .table td:first-child {
+  background-color: rgb(148, 213, 243);
+  color: black;
+  font-weight: 800;
+  font-size: 20px;
+  font-family: "Arial Narrow Bold", sans-serif;
+}
+body main .table th:first-child {
+  background-color: rgb(57, 57, 57);
+  color: rgb(148, 213, 243);
+  border: none;
+}
+body main .matriz {
+  min-height: 100%;
+  min-width: 30%;
+  align-self: flex-start;
+}
+body main .matriz td, body main .matriz th {
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgb(0, 0, 0);
+  text-align: center;
+  background-color: rgb(57, 57, 57);
+  font-weight: 700;
+  font-size: 18px;
+}
+body main .matriz th, body main .matriz td:first-child {
+  background-color: rgb(148, 213, 243);
+  color: black;
+  font-weight: 800;
+  font-size: 20px;
+  font-family: "Arial Narrow Bold", sans-serif;
+}
+body main .matriz th:first-child {
+  background-color: rgb(57, 57, 57);
+  color: rgb(148, 213, 243);
+  border: none;
+}
+
+.oculto {
+  display: none !important;
+}
+
+/*# sourceMappingURL=style.css.map */

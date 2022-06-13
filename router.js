@@ -17,6 +17,7 @@ server.post('/knn', upload.array('files', 2), async (req, res) => {
   console.log(req)
   const { files } = req
   const matrix = await knn(k, files[1].filename, files[0].filename)
+
   res.json({ matrix })
 })
 
