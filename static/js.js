@@ -6,7 +6,8 @@ getData = async () =>{
     .then( async (response) => {
       result = await response.json()
   })
-  table = result.matrix
+  console.log(result)
+  tableResult = result.matrix
   showData()
 }
 
