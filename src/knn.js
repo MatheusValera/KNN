@@ -115,7 +115,7 @@ const knn = async (k,nameFileTest, nameFileTraining) => {
       matrix[classResults.indexOf(value)][classResults.indexOf(value)]++
   })
 
-  return matrix
+  return {matrix, classResults}
 }
 
 module.exports = { knn }

@@ -23,8 +23,8 @@ server.post('/knn', upload.array('files', 2), async (req, res) => {
 
 server.post('/knnTest', upload.array('files', 2), async (req, res) => {
   const k = req.body.k
-  const matrix = await knn(k,'base_teste.csv','base_treinamento.csv')
-  res.json({ matrix })
+  const result = await knn(k,'base_teste.csv','base_treinamento.csv')
+  res.json(result)
 })
 
 server.listen(8080, () => {
